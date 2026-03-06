@@ -1,0 +1,15 @@
+Key features to implement in a school management system:
+
+Student information management
+
+Teacher and staff management
+
+Class and subject organization
+
+Attendance tracking
+
+Grade management
+
+Timetable scheduling
+
+Reporting and analytics

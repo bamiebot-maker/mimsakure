@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Application.css">
+  <title>application foam</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <h3 class="logo">
+           Deenul Islam New Enrollment Section.
+        </h3>
+      </div>
+    </div>
+  </header>
+  <fieldset>
+    <h1>Registration foam steps</h1>
+  </fieldset>
+  <section class="one">
+      <legend>
+        Students  personal info
+      </legend>
+      <form class="first">
+        <label>First Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="First Name" required>
+         <label>Middle Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="Middle Name" required>
+        <label>Last Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="Last Name" required>
+        <label>Date of birth *</label>
+        <input type="date" name="DOB" min="2000-01-01" max="2020-01-01">
+         <label for="country">
+           Country *
+         </label>
+            <select id="country" name="country" required>
+            <option value="">
+              Select Country
+            </option>
+            <option value="Nigeria">
+              Nigeria
+            </option> 
+      </select>
+      
+       <label for="state">State *</label>
+          <select id="state" name="state" required disabled> 
+             <option value="">
+               Select State
+             </option> 
+          </select>
+      
+       <label for="lga">
+         Local Government Area *
+       </label>
+        <select id="lga" name="lga" required disabled>
+          <option value="">
+            Select LGA
+          </option>
+        </select>
+        <label>Gender *</label>
+        <select name="gender" id="gender">
+          <option>select</option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+        <label for="">
+          Any health Problem(optional) *
+        </label>
+        <textarea name="text" id="text" rows="5" cols="20" placeholder="describe.... "></textarea>
+  </div> 
+  <button class="button">
+  Next
+  </button>
+ </form>
+  </section><br/>
+  
+  <section class="two">
+      <legend>
+        Upload Passport
+      </legend>
+        <form>
+          <input type="file" name="passport" id="passport" value="1" />
+       <button class="button">
+         Next
+       </button>
+  </form>
+  </section><br /><br />
+  
+  <section class="three">
+      <legend>
+        Parents/guardians info
+      </legend>
+      <form class="first">
+        <label>First Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="First Name">
+        <label>Middle Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="Middle Name">
+        <label>Last Name *</label>
+        <input type="text" name="fName" id="fName" value="" placeholder="Last Name">
+        <label>Email *</label>
+        <input type="email" name="email" id="email-input" placeholder="enter your email">
+        <label>Phone *</label>
+        <input type="tel" name="phone" id="phone" placeholder="phone">
+        <label>Home Address *</label>
+        <input type="text" name="address" id="address" placeholder="Home address" />
+        <label>City *</label>
+        <input type="text" name="city" id="city" placeholder="City"/>
+        <label>State *</label>
+        <input type="text" name="State" id="State" placeholder="State"/>
+    <button class="button" type="submit">
+      Next
+    </button>
+ </form>
+  </section><br /><br>
+  
+  <section class="four">
+    <legend>
+      Child Education Background
+    </legend>
+      <form>
+        <label for="">
+          School Attended(optional) *
+        </label> 
+        <input type="text" name="att" id="attend" value="" / placeholder="previous school if any">
+        <input type="text" name="class" id="class" placeholder="Last Class">
+        <label for="">
+          reason for leaving *
+        </label>
+        <input type="text" name="reason" id="reason" value="" placeholder="describe here"/>
+        <button class="button" type="submit">
+          submit
+        </button>
+      </form>
+  </section>
+  <script src="Application.js"></script>
+</body>
+</html>

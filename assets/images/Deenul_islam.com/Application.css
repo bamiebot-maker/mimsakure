@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #ABABAB;
+    padding-top: 70px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: #767676;
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px solid #0A0A0A;
+  z-index: 1000;
+}
+
+header h3 {
+  font-size: 23px;
+  padding-top: 20px;
+}
+
+fieldset {
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.one {
+  padding-top: 20px;
+  height: auto;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: #585858;
+}
+
+.one legend {
+  color: #FCFCFC;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.one form {
+  text-align: center;
+}
+
+.one label {
+  display: flex;
+  text-align: start;
+  color: #FCFCFC;
+  padding-left: 10px;
+}
+
+.one input[type="text"], 
+input[type="date"], input[type="file"], input[type="email"], input[type="tel"], select, textarea {
+  width: 220px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.one .button {
+  font-size: 20px;
+  width: 120px;
+  height: 35px;
+  background: #BBBBBB;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 20px 20px 150px;
+}
+
+.two {
+  padding-top: 20px;
+  height: auto;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: #585858;
+}
+
+.two legend {
+  color: #FCFCFC;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.two form {
+  text-align: center;
+}
+
+.two label {
+  display: flex;
+  text-align: start;
+  color: #FCFCFC;
+  padding-left: 10px;
+}
+
+.two input[type="text"], 
+input[type="date"], input[type="file"], input[type="email"], input[type="tel"], select, textarea {
+  width: 220px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.two .button {
+  font-size: 20px;
+  width: 120px;
+  height: 35px;
+  background: #BBBBBB;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 20px 20px 150px;
+}
+
+.three {
+  padding-top: 20px;
+  height: auto;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: #585858;
+}
+
+.three legend {
+  color: #FCFCFC;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.three form {
+  text-align: center;
+}
+
+.three label {
+  display: flex;
+  text-align: start;
+  color: #FCFCFC;
+  padding-left: 10px;
+}
+
+.three input[type="text"], 
+input[type="date"], input[type="file"], input[type="email"], input[type="tel"], select, textarea {
+  width: 220px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.three .button {
+  font-size: 20px;
+  width: 120px;
+  height: 35px;
+  background: #BBBBBB;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 20px 20px 150px;
+}
+
+.four {
+  padding-top: 20px;
+  height: auto;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  background: #585858;
+}
+
+.four legend {
+  color: #FCFCFC;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.four form {
+  text-align: center;
+}
+
+.four label {
+  display: flex;
+  text-align: start;
+  color: #FCFCFC;
+  padding-left: 10px;
+}
+
+.four input[type="text"], 
+input[type="date"], input[type="file"], input[type="email"], input[type="tel"], select, textarea {
+  width: 220px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.four .button {
+  font-size: 20px;
+  width: 120px;
+  height: 35px;
+  background: #BBBBBB;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 20px 20px 150px;
+}
