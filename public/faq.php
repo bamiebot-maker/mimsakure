@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FAQs | MIMS</title>
-  <style>
-     body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-        main {
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-    
-
-    .container {
-      background-color: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #2515bba8;
-      margin-bottom: 20px;
-    }
-
-    .faq {
-      margin-bottom: 20px;
-    }
-
-    .faq h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .faq p {
-      margin: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | MIMS</title>
 </head>
-<body>
-<?php include '../hedfoot/header.php'; ?>
-<main>
+<body class="bg-light">
+    <?php include '../hedfoot/header.php'; ?>
 
-  <div class="container">
-    <h1>Frequently Asked Questions</h1>
+    <main class="container my-5 pt-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold" style="color: #074C3E;">Frequently Asked Questions</h1>
+            <p class="text-muted fs-5">Find answers to common questions about MSSN Islamic Model School.</p>
+        </div>
 
-    <div class="faq">
-      <h2>Question 1: What is MIMS?</h2>
-      <p>Answer: MIMS stands for MSSN Islamic Model School. It is designed to manage and facilitate educational processes.</p>
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+                    
+                    <div class="accordion-item border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold py-4 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What is MIMS?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body py-4 text-muted fs-6">
+                                MIMS stands for MSSN Islamic Model School (MIMS Akure). It is a comprehensive school management system designed to manage and facilitate educational processes, connecting students, teachers, and administrators seamlessly.
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="faq">
-      <h2>Question 2: How can I reset my password?</h2>
-      <p>Answer: You can reset your password by clicking on the 'Forgot Password' link on the login page.</p>
-    </div>
+                    <div class="accordion-item border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold py-4 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How can I reset my password?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body py-4 text-muted fs-6">
+                                You can reset your password by clicking on the "Forgot Password" link on the login page. Follow the instructions sent to your registered email address to create a new secure password.
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="faq">
-      <h2>Question 3: Who can I contact for support?</h2>
-      <p>Answer: You can contact our support team at support@mims.com for any inquiries.</p>
-    </div>
+                    <div class="accordion-item border-bottom">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold py-4 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Who can I contact for support?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body py-4 text-muted fs-6">
+                                You can contact our support team at <a href="mailto:support@mims.com" class="text-success text-decoration-none fw-bold">support@mims.com</a> or visit our <a href="contact.php" class="text-success text-decoration-none fw-bold">Contact Us</a> page to send a direct message. Our team is available Monday to Friday, 8:00 AM - 4:00 PM.
+                            </div>
+                        </div>
+                    </div>
 
-  </div>
-</main>
-<?php include '../hedfoot/footer.php'; ?>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold py-4 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Is my data secure on MIMS?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body py-4 text-muted fs-6">
+                                Yes, we take data security very seriously. We use advanced encryption and secure authentication protocols to ensure that all student, teacher, and administrative records are protected at all times.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <?php include '../hedfoot/footer.php'; ?>
 </body>
 </html>

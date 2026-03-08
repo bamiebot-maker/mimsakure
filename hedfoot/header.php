@@ -1,183 +1,80 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-        header {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-            background: #ffffff;
-            padding: 15px 10%;
-            border-bottom: 1px solid #ddd;
-            position: relative;
-        }
+<!-- MIMS Header Partial -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+    :root {
+        --primary-green: #074C3E;
+        --secondary-green: #158f76;
+    }
+    .main-header {
+        background: #ffffff;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .navbar-brand img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid var(--primary-green);
+    }
+    .nav-link {
+        font-weight: 500;
+        color: #333 !important;
+        transition: color 0.3s;
+    }
+    .nav-link:hover {
+        color: var(--primary-green) !important;
+    }
+    .btn-auth-outline {
+        border: 1px solid var(--primary-green);
+        color: var(--primary-green);
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 8px 20px;
+        transition: all 0.3s;
+    }
+    .btn-auth-outline:hover {
+        background: var(--primary-green);
+        color: white;
+    }
+    .btn-auth-filled {
+        background: var(--primary-green);
+        color: white;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 8px 20px;
+        transition: all 0.3s;
+    }
+    .btn-auth-filled:hover {
+        background: #05332a;
+        color: white;
+        box-shadow: 0 4px 12px rgba(7, 76, 62, 0.2);
+    }
+</style>
 
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .logo  img {
-             width: 30px;
-             margin-right: 10px;
-             border-radius: 50%;
-}
-
-        /* Navigation */
-        nav {
-            display: flex;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-        }
-
-        /* Hamburger Menu */
-        .menu-toggle {
-            display: none;
-            font-size: 30px;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-
-        .close-menu {
-            display: none;
-            font-size: 30px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            position: absolute;
-            top: 15px;
-            right: 10%;
-        }
-
-        /* Responsive Navigation */
-        @media (max-width: 768px) {
-            .nav {
-                display: none;
-                flex-direction: column;
-                background: white;
-                position: absolute;
-                top: 60px;
-                right: 10%;
-                width: 200px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-                padding: 20px;
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                margin-bottom: 15px;
-            }
-
-            .menu-toggle {
-                display: block;
-                margin-left: 220px;
-            }
-        }
-/* Auth Buttons */
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.btn-light, .btn-dark {
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.btn-light {
-    background: transparent;
-    border: 1px solidrgb(0, 0, 0);
-    color: #070236ff;
-}
-
-.btn-dark {
-    background: #070236ff;
-    color: white;
-    border: none;
-}
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img id="logo" src="../asset/mims.png" alt="MSSN Logo">
-            <span>MIMS</span>
-            <button class="menu-toggle">☰</button>
-            <button class="close-menu">✖</button>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../public/about.php">Mission</a></li>
-                <li><a href="../public/about.php">About Us</a></li>
-                <li><a href="../public/contact.php">Contact Us</a></li>
-                <li><a href="../public/faq.php">FAQs</a></li>
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.php">
+            <img src="../asset/mims.png" alt="MIMS Logo" class="me-2">
+            <span class="fw-bold fs-4" style="color: var(--primary-green);">MIMS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link px-3" href="../index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="../public/about.php">About Us</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="../public/contact.php">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="../public/faq.php">FAQs</a></li>
             </ul>
-            <div class="auth-buttons">
-            <a href="../public/signup.php" class="btn-light">Sign Up</a>
-            <a href="../public/login.php" class="btn-dark">Login</a>
+            <div class="d-flex gap-2 mt-3 mt-lg-0">
+                <a href="../public/login.php" class="btn btn-auth-outline text-decoration-none">Login</a>
+                <a href="../public/signup.php" class="btn btn-auth-filled text-decoration-none">Sign Up</a>
+            </div>
         </div>
-        </nav>
-    </header>
-    <script>
-       // Hamburger Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const closeMenu = document.querySelector('.close-menu');
-        const nav = document.querySelector('nav');
-
-        menuToggle.addEventListener('click', () => {
-            nav.style.display = "flex";
-            menuToggle.style.display = "none";
-            closeMenu.style.display = "block";
-        });
-
-        closeMenu.addEventListener('click', () => {
-            nav.style.display = "none";
-            menuToggle.style.display = "block";
-            closeMenu.style.display = "none";
-        });
-
-               // Close menu on resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                nav.style.display = "flex";
-                menuToggle.style.display = "none";
-                closeMenu.style.display = "none";
-            } else {
-                nav.style.display = "none";
-                menuToggle.style.display = "block";
-            }
-        });
-    </script>
-</body>
-</html>
+    </nav>
+</header>
