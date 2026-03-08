@@ -1,10 +1,12 @@
 <?php
-
-session_start();
-
-
-
+include '../config/auth.php';
 include '../config/db.php';
+
+// Access Control check
+if ($_SESSION['usertype'] !== 'admin') {
+    header("Location: ../public/login.php");
+    exit();
+}
 
 $teacherCount = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE role = 'teacher'"));
 $studentCount = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE role = 'student'"));

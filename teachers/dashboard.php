@@ -1,11 +1,20 @@
 
+<?php
+include '../config/auth.php';
+include '../config/db.php';
 
+// Access Control check
+if ($_SESSION['usertype'] !== 'teacher') {
+    header("Location: ../public/login.php");
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Dashboard | MIMS</title>
+  <title>Teacher Dashboard | MIMS</title>
   <style>
 
     .main h2{
@@ -79,12 +88,12 @@
 
   <div class="main">
      <?php
-    echo "<h2>" . htmlspecialchars($tim) . " Student!</h2>";
+    echo "<h2>" . htmlspecialchars($tim) . " Teacher!</h2>";
     ?>
     <div class="card">
       <h2>MSSN ISLAMIC MODEL SCHOOL</h2>
       <p>
-        Welcome to the MSSN Islamic Model School student dashboard.
+        Welcome to the MSSN Islamic Model School teacher dashboard.
       </p>
     </div>
   </div>

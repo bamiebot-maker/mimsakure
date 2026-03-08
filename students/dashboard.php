@@ -1,5 +1,14 @@
 
+<?php
+include '../config/auth.php';
+include '../config/db.php';
 
+// Access Control check
+if ($_SESSION['usertype'] !== 'student') {
+    header("Location: ../public/login.php");
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
